@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Encriptador.css">
+    <title>Challenge ONE + Alura Latam</title>
+</head>
+<body>
+    <h1 class="titulo_principal">CÓDIGO SECRETO</h1>
+    <section class="formularios">
+        <div class="caja1">
+            <label for="input-texto"><h2>Ingrese el texto a encriptar</h2></label>
+            <textarea id="entradaTexto" name="textarea" rows="10" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder="Ingrese solo letras minusculas, sin acentos o caracteres especiales"></textarea>
+            <br>
+            <button class="boton_izquierdo" onclick="botonEncriptar()">ENCRIPTAR</button>
+            <button class="boton_derecho" onclick="botonDesencriptar()">DESENCRIPTAR</button>
+        </div>
+    
+        <div class="caja2">
+            <label for="output-texto"><h2 id="titulo-desencriptar">Mensaje encriptado</h2></label>
+            <textarea id="salidaTexto" name="textarea" rows="10" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder="escriba algo aqui..."></textarea>
+            <br>
+            <button class="boton_izquierdo" onclick="botonCopiar()">COPIAR</button>
+            <button class="boton_derecho" onclick="botonPegar()">COPIAR Y PEGAR</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2022 Belen Denice Beuter</p>
+    </footer>
+
+    <script src="encriptador.js"></script>
+</body>
+</html>
